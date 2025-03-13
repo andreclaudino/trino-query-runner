@@ -37,3 +37,4 @@ EXPOSE 8080
 ENV RUST_LOG=info
 
 COPY --from=builder /home/builder/target/release/* /usr/bin/
+RUN ln /usr/bin/trino-query-runner /usr/bin/run
