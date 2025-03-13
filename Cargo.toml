@@ -1,0 +1,16 @@
+[package]
+name = "trino-query-runner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.97"
+clap = { version = "4.5.32", features = ["color", "error-context", "help", "std", "suggestions", "usage", "derive", "env"] }
+csv = "1.3.1"
+env_logger = "0.11.7"
+minijinja = "2.8.0"
+serde = "1.0.219"
+sqlparser = "0.55.0"
+tokio = { version = "1.44.0", features = ["macros"] }
+trino-rust-client = "0.7.1"
+url = "2.5.4"
