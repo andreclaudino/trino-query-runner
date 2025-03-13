@@ -1,4 +1,4 @@
-FROM docker.io/rust:1.81-bullseye as builder
+FROM docker.io/rust:1.85-bullseye as builder
 
 ENV RUST_LOG=info
 ENV RUST_BACKTRACE=full
